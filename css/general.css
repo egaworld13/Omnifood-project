@@ -14,6 +14,7 @@ Bold:700
  Default: 1
  Small:1.05
  Medium: 1.2
+ large: 1.8
  Paragtaph default: 1.6
 
 
@@ -54,12 +55,14 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Precentage of user's browser font-size settings */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /***********************/
@@ -92,9 +95,9 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-.grid--5-cols {
+/* .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 .grid--center-v {
   align-items: center;
 }
@@ -209,6 +212,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
